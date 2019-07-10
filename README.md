@@ -1,6 +1,16 @@
 
 # analysis
 ### 经营分析系统
+```
+// 启动
+npm install yarn -g
+yarn
+yarn serve
+
+// 生产包
+yarn build
+```
+
 前端开发文档
 一. 前端框架插件支持
 1. node 环境
@@ -12,7 +22,7 @@
 6. echarts 图形插件
 7. crypto-js 加解密插件
 8. axios 异步请求插件
-8. manifest.json 小程序配置文件
+8. manifest.json 安卓、ios程序配置文件
 
 介绍 
 vue全家桶，上手速度快，面向人群广泛。
@@ -20,7 +30,7 @@ cude-ui 是基于 Vue.js 实现的精致移动端组件库。特点支持 better
 同时支持 less和stylus Css样式预处理
 postcss-px2rem 是px转换rem插件配合amfe-flexible使用，如果项目中不想转化rem，可以在后面添加‘/*no*/’过滤。
 postcss-px2rem 的配置项整合到package.json; 本项目配置remUnit=37.5，对于375设计稿1:1输出，而750则是2:1。
-manifest.json 打包小程序需要配置的启动页面，已经整合到 public 目录下。
+manifest.json 打包安卓、ios程序需要配置的启动页面，已经整合到 public 目录下。
 用于Hbuilder编辑器下的云打包工程，相关打包流程请看官方文档。
 
 运行环境
@@ -81,3 +91,4 @@ manifest.json 打包小程序需要配置的启动页面，已经整合到 publi
 >yarn.lock
 
 ```
+、、、
