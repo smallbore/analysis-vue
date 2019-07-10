@@ -1,0 +1,70 @@
+// 主体样式
+@theme-color:#09b3cd;
+
+//白色
+@color-white:#fff;
+
+//红色
+@color-red:rgb(241, 109, 109);
+
+
+// 禁止换行, 文本溢出省略号显示 (一行)
+.ellipsis{
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 文本溢出省略号显示 (多行)
+.ellipsis-mult(@n: 3) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @n;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 禁止文本被选择
+.user-select{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+// top 边框线
+.setTopLine{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    height: 1px; /*no*/
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /*no*/
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+// bottom 边框线
+.setBottomLine{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right: 0;
+    height: 1px; /*no*/
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /*no*/
+    color: rgba(0, 0, 0, 0.1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}

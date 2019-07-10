@@ -1,0 +1,20 @@
+module.exports = {
+  css: {
+    loaderOptions: {
+      stylus: {
+        'resolve url': true,
+        'import': [
+          './src/theme'
+        ]
+      }
+    }
+  },
+  pluginOptions: {
+    'cube-ui': {
+      postCompile: true,
+      theme: true
+    }
+  },
+  // 这里是配置上线读取当前目录，默认是根路径，如 /js, /css 等，具体根据项目来
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+}
